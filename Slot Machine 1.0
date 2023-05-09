@@ -1,0 +1,70 @@
+import random
+money= 10000
+while money > 0:
+    answer = input("do you want to spin the Slot Machine?('yes or no'): ")
+    if answer == "yes":
+        First = random.randint(0,4)
+        Second = random.randint(0,4)
+        Third = random.randint(0,4)
+        if First == 0:
+            First= "CHERRY"
+        elif First == 1:
+            First= "LEMON"
+        elif First == 2:
+            First= "ORANGE"
+        elif First == 3:
+            First= "COINS"
+        elif First == 4:
+            First= "7"
+        if Second == 0:
+            Second= "CHERRY"
+        elif Second == 1:
+            Second= "LEMON"
+        elif Second == 2:
+            Second= "ORANGE"
+        elif Second == 3:
+            Second= "COINS"
+        elif Second == 4:
+            Second= "7"
+        if Third == 0:
+            Third= "CHERRY"
+        elif Third == 1:
+            Third= "LEMON"
+        elif Third == 2:
+            Third= "ORANGE"
+        elif Third == 3:
+            Third= "COINS"
+        elif Third == 4:
+            Third= "7"
+        print("You spun the Slot Machine you got (" +str(First)+ "),(" +str(Second)+ "),(" +str(Third)+ ")")
+        if((First == "CHERRY") and (Second == "CHERRY") and (Third != "CHERRY")):
+            win = 1600
+        elif((First == "7") and (Second == "7") and (Third != "7")):
+            win = 1200
+        elif((First == "ORANGE") and (Second == "ORANGE") and (Third != "ORANGE")):
+            win = 900
+        elif((First == "COINS") and (Second == "COINS") and (Third != "COINS")):
+            win = 700
+        elif((First == "CHERRY") and (Second == "CHERRY") and (Third == "CHERRY")):
+            win = 2500
+        elif((First == "ORANGE") and (Second == "ORANGE") and ((Third == "ORANGE"))):
+            win = 2300
+        elif((First == "COINS") and (Second == "COINS") and ((Third == "COINS"))):
+            win = 1500
+        elif((First == "7") and (Second == "7") and (Third == "7")):
+            win = 3000
+        else:
+            win = -1000
+        money += win
+        if(win > 0):
+            print("You win $"+ str(win))
+            print(money)
+        else:
+            print("You lose")
+            print(money)
+    elif answer == "no":
+        print("you quit with $" +str(money))
+        money=0
+    else:
+        print("error")
+        money=0
