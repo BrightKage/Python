@@ -1,0 +1,1034 @@
+import random
+from tkinter import *
+
+root = Tk()
+canvas_width= 400
+canvas_height= 400
+screen = Canvas(root, width=canvas_width, height=canvas_height)
+screen.pack()
+
+
+
+
+
+HAIRTEXF = input("what type of hair does the father have(DD,Dd,dd)")
+HAIRTEXM = input("what type of hair does the mother have")
+
+
+if  HAIRTEXF ==  "DD" and HAIRTEXM == "DD":
+    HAIRTEX= 'CURLY'
+elif HAIRTEXF == "DD" and HAIRTEXM == "Dd":
+    FIRST = random.randint(0,1)
+    if FIRST == "0":
+        HAIRTEX = 'WAVY'
+    elif FIRST == "1":
+        HAIRTEX = 'CURLY'
+elif HAIRTEXF == "DD" and HAIRTEXM == "dd":
+    HAIRTEX= 'WAVY'
+elif HAIRTEXF == "Dd" and HAIRTEXM == "DD":
+    FIRST = random.randint(0,1)
+    if FIRST == "0":
+        HAIRTEX = 'WAVY'
+    elif FIRST == "1":
+        HAIRTEX = 'CURLY'
+elif HAIRTEXF == "Dd" and HAIRTEXM == "Dd":
+    HAIRTEX= 'WAVY'
+elif HAIRTEXF == "Dd" and HAIRTEXM == "dd":
+    FIRST = random.randint(0,1)
+    if FIRST == "0":
+        HAIRTEX = 'WAVY'
+    elif FIRST == "1":
+        HAIRTEX = 'STRAIGHT'
+elif HAIRTEXF == "dd" and HAIRTEXM == "DD":
+    HAIRTEX='WAVY'
+elif HAIRTEXF == "dd" and HAIRTEXM == "Dd": 
+    FIRST = random.randint(0,1)
+    if FIRST == "0":
+        HAIRTEX = 'WAVY'
+    elif FIRST == "1":
+        HAIRTEX = 'STRAIGHT'
+elif HAIRTEXF == "dd" and HAIRTEXM == "dd":
+    HAIRTEX='STRAIGHT'
+
+NOSEF = input("what is the fathers nose size(DD,Dd,dd)")
+NOSEM = input("what is the mothers nose size")
+if  NOSEF ==  "DD" and NOSEM == "DD":
+    NOSE= 'LARGE'
+elif NOSEF == "DD" and NOSEM == "Dd":
+    FIRST = random.randint(0,1)
+    if FIRST == "0":
+        NOSE = 'MEDIUM'
+    elif FIRST == "1":
+        NOSE = 'LARGE'
+elif NOSEF == "DD" and NOSEM == "dd":
+    NOSE= 'MEDIUM'
+elif NOSEF == "Dd" and NOSEM == "DD":
+    FIRST = random.randint(0,1)
+    if FIRST == "0":
+        NOSE = 'MEDIUM'
+    elif FIRST == "1":
+        NOSE = 'LARGE'
+elif NOSEF == "Dd" and NOSEM == "Dd":
+    NOSE= 'MEDIUM'
+elif NOSEF == "Dd" and NOSEM == "dd":
+    FIRST = random.randint(0,1)
+    if FIRST == "0":
+        NOSE = 'MEDIUM'
+    elif FIRST == "1":
+        NOSE = 'SMALL'
+elif NOSEF == "dd" and NOSEM == "DD":
+    NOSE='MEDIUM'
+elif NOSEF == "dd" and NOSEM == "Dd": 
+    FIRST = random.randint(0,1)
+    if FIRST == "0":
+        NOSE = 'MEDIUM'
+    elif FIRST == "1":
+        NOSE = 'SMALL'
+elif NOSEF == "dd" and NOSEM == "dd":
+    NOSE='SMALL'
+
+EYESIZEF = input("what is the fathers eye size(DD,Dd,dd)")
+EYESIZEM = input("what is the mothers eye size")
+if  EYESIZEF ==  "DD" and EYESIZEM == "DD":
+    EYESIZ= 'LARGE'
+elif EYESIZEF == "DD" and EYESIZEM == "Dd":
+    FIRST = random.randint(0,1)
+    if FIRST == "0":
+        EYESIZ = 'MEDIUM'
+    elif FIRST == "1":
+        EYESIZ = 'LARGE'
+elif EYESIZEF == "DD" and EYESIZEM == "dd":
+    EYESIZ= 'MEDIUM'
+elif EYESIZEF == "Dd" and EYESIZEM == "DD":
+    FIRST = random.randint(0,1)
+    if FIRST == "0":
+        EYESIZ = 'MEDIUM'
+    elif FIRST == "1":
+        EYESIZ = 'LARGE'
+elif EYESIZEF == "Dd" and EYESIZEM == "Dd":
+    EYESIZ= 'MEDIUM'
+elif EYESIZEF == "Dd" and EYESIZEM == "dd":
+    FIRST = random.randint(0,1)
+    if FIRST == "0":
+        EYESIZ = 'MEDIUM'
+    elif FIRST == "1":
+        EYESIZ = 'SMALL'
+elif EYESIZEF == "dd" and EYESIZEM == "DD":
+    EYESIZ='MEDIUM'
+elif EYESIZEF == "dd" and EYESIZEM == "Dd": 
+    FIRST = random.randint(0,1)
+    if FIRST == "0":
+        EYESIZ = 'MEDIUM'
+    elif FIRST == "1":
+        EYESIZ = 'SMALL'
+elif EYESIZEF == "dd" and EYESIZEM == "dd":
+    EYESIZ='SMALL'
+
+EYEDISF = input("how far is the fathers eyes(DD,Dd,dd)")
+EYEDISM = input("how far is the mother eyes")
+if  EYEDISF ==  "DD" and EYEDISM == "DD":
+    EYEDIS= 'FAR'
+elif EYEDISF == "DD" and EYEDISM == "Dd":
+    FIRST = random.randint(0,1)
+    if FIRST == "0":
+        EYEDIS = 'AVERAGE'
+    elif FIRST == "1":
+        EYEDIS = 'FAR'
+elif EYEDISF == "DD" and EYEDISM == "dd":
+    EYEDIS= 'AVERAGE'
+elif EYEDISF == "Dd" and EYEDISM == "DD":
+    FIRST = random.randint(0,1)
+    if FIRST == "0":
+        EYEDIS = 'AVERAGE'
+    elif FIRST == "1":
+        EYEDIS = 'FAR'
+elif EYEDISF == "Dd" and EYEDISM == "Dd":
+    EYEDIS= AVERAGE
+elif EYEDISF == "Dd" and EYEDISM == "dd":
+    FIRST = random.randint(0,1)
+    if FIRST == "0":
+        EYEDIS = 'AVERAGE'
+    elif FIRST == "1":
+        EYEDIS = 'CLOSE'
+elif EYEDISF == "dd" and EYEDISM == "DD":
+    EYEDIS='AVERAGE'
+elif EYEDISF == "dd" and EYEDISM == "Dd": 
+    FIRST = random.randint(0,1)
+    if FIRST == "0":
+        EYEDIS = 'AVERAGE'
+    elif FIRST == "1":
+        EYEDIS = 'CLOSE'
+elif EYEDISF == "dd" and EYEDISM == "dd":
+    EYEDIS='CLOSE'
+
+
+
+
+
+
+
+FRECKF = input("does the father have freckles(Y,N)")
+if FRECKF == "Y":
+    FRECKGF1 = input("does the grandfather have freckles")
+    if FRECKGF1 == "Y":
+        FRECKf1 = "Y"
+    elif FRECKGF1 == "N":
+        FRECKf1 = "N"
+    FRECKGM1 = input("does the grandmother have freckles")
+    if FRECKf1 == "Y":
+        if FRECKGM1 == "Y":
+            FRECK1 = "YY"
+        elif FRECKGM1 == "N":
+            FRECK1 = "YN"
+    elif FRECKf1 == "N":
+        if FRECKGM1 == "Y":
+            FRECK1 = "YN"
+        elif FRECKGM1 == "N":
+            print("error either you messed up or your adopted")
+elif FRECKF == "N":
+    FRECK1 = "NN"    
+
+FRECKM = input("does the mother have freckles")
+if FRECKM == "Y":
+    FRECKGF2 = input("does the grandfather have freckles")
+    if FRECKGF2 == "Y":
+        FRECKf2 = "Y"
+    elif FRECKGF2 == "N":
+        FRECKf2 = "N"
+    FRECKGM2 = input("does the grandmother have freckles")
+    if FRECKf2 == "Y":
+        if FRECKGM2 == "Y":
+            FRECK2 = "YY"
+        elif FRECKGM2 == "N":
+            FRECK2 = "YN"
+    elif FRECKf2 == "N":
+        if FRECKGM2 == "Y":
+            FRECK2 = "YN"
+        elif FRECKGM2 == "N":
+            print("error either you messed up or your adopted")
+elif FRECKM == "N":
+    FRECK2 = "NN"
+
+if  FRECK1 ==  "YY" and FRECK2 == "YY":
+    FRECK = "YES"
+elif FRECK1 == "YY" and FRECK2 == "YN":
+    FRECK = "YES"
+elif FRECK1 == "YY" and FRECK2 == "NN":
+    FRECK = "YES"
+elif FRECK1 == "YN" and FRECK2 == "YY":
+    FRECK = "YES"
+elif FRECK1 == "YN" and FRECK2 == "YN":
+    FRECK = "YES"
+elif FRECK1 == "YN" and FRECK2 == "NN":
+    FIRST = random.randint(0,1)
+    if FIRST == "0":
+        FRECK = 'YES'
+    elif FIRST == "1":
+        FRECK = 'NO'
+elif FRECK1 == "NN" and FRECK2 == "YY":
+    FRECK = "YES"
+elif FRECK1 == "NN" and FRECK2 == "YN": 
+    FIRST = random.randint(0,1)
+    if FIRST == "0":
+        FRECK = 'YES'
+    elif FIRST == "1":
+        FRECK = 'NO'
+elif FRECK1 == "NN" and FRECK2 == "NN":
+    FRECK = "NO"
+
+LASHF = input("DOES THE FATHER HAVE LONG LASHES? ")
+if LASHF == "Y":
+    LASHGF1 = input("DOES THE GRANDFATHER HAVE LONG LASHES? ")
+    if LASHGF1 == "Y":
+        LASHF1 = "Y"
+    elif LASHGF1 == "N":
+        LASHF1 = "N"
+    LASHGM1 = input("DOES THE GRANDMOTHER HAVE LONG LASHES? ")
+    if LASHF1 == "Y":
+        if LASHGM1 == "Y":
+            LASH1 = "YY"
+        elif LASHGM1 == "N":
+            LASH1 = "YN"
+    elif LASHF1 == "N":
+        if LASHGM1 == "Y":
+            LASH1 = "YN"
+        elif LASHGM1 == "N":
+            print("error either you messed up or your adopted")
+elif LASHF == "N":
+    LASH1 = "NN"  
+
+LASHM = input("DOES THE MOTHER HAVE LONG LASHES")
+if LASHM == "Y":
+    LASHGF2 = input("DOES THE GRANDFATHER HAVE LONG LASHES")
+    if LASHGF2 == "Y":
+        LASHF2 = "Y"
+    elif LASHGF2 == "N":
+        LASHF2 = "N"
+    LASHGM2 = input("DOES THE GRANDMOTHER HAVE LONG LASHES")
+    if LASHF2 == "Y":
+        if LASHGM2 == "Y":
+            LASH2 = "YY"
+        elif LASHGM2 == "N":
+            LASH2 = "YN"
+    elif LASHF2 == "N":
+        if LASHGM2 == "Y":
+            LASH2 = "YN"
+        elif LASHGM2 == "N":
+            print("error either you messed up or your adopted")
+elif LASHM == "N":
+    LASH2 = "NN"
+    
+if  LASH1 ==  "YY" and LASH2 == "YY":
+    LASH = "LONG"
+elif LASH1 == "YY" and LASH2 == "YN":
+    LASH = "LONG"
+elif LASH1 == "YY" and LASH2 == "NN":
+    LASH = "LONG"
+elif LASH1 == "YN" and LASH2 == "YY":
+    LASH = "LONG"
+elif LASH1 == "YN" and LASH2 == "YN":
+    LASH = "LONG"
+elif LASH1 == "YN" and LASH2 == "NN":
+    FIRST = random.randint(0,1)
+    if FIRST == "0":
+        LASH = 'LONG'
+    elif FIRST == "1":
+        LASH = 'SMALL'
+elif LASH1 == "NN" and LASH2 == "YY":
+    LASH = "LONG"
+elif LASH1 == "NN" and LASH2 == "YN": 
+    FIRST = random.randint(0,1)
+    if FIRST == "0":
+        LASH = 'LONG'
+    elif FIRST == "1":
+        LASH = 'SMALL'
+elif LASH1 == "NN" and LASH2 == "NN":
+    LASH = "SMALL"
+
+BROWDISF = input("DOES THE FATHER HAVE SEPERATE EYEBROWS")
+if BROWDISF == "Y":   
+    BROWDISGF1 = input("DOES THE GRANDFATHER HAVE SEPERATE EYEBROWS")
+    if BROWDISGF1 == "Y":
+        BROWF1 = "Y"
+    elif BROWDISGF1 == "N":
+        BROWF1 = "N"
+    BROWNDISGM1 = input("DOES THE GRANDMOTHER HAVE SEPERATE EYEBROWS")
+    if BROWF1 == "Y":
+        if BROWNDISGM1 == "Y":
+            BROW1 = "YY"
+        elif BROWNDISGM1 == "N":
+            BROW1 = "YN"
+    elif BROWF1 == "N":
+        if BROWNDISGM1 == "Y":
+            BROW1 = "YN"
+        elif BROWNDISGM1 == "N":
+            print("error either you messed up or your adopted")
+elif BROWDISF == "N":
+    BROW1 = "NN"
+
+BROWDISM = input("DOES THE MOTHER HAVE SEPERATE EYEBROWS")
+if BROWDISM == "Y":
+    BROWDISGF2 = input("DOES THE GRANDFATHER HAVE SEPERATE EYEBROWS")
+    if BROWDISGF2 == "Y":
+        BROWF2 = "Y"
+    elif BROWDISGF2 == "N":
+        BROWF2 = "N"
+    BROWNDISGM2 = input("DOES THE GRANDMOTHER HAVE SEPERATE EYEBROWS")
+    if BROWF2 == "Y":
+        if BROWNDISGM2 == "Y":
+            BROW2 = "YY"
+        elif BROWNDISGM2 == "N":
+            BROW2 = "YN"
+    elif BROWF2 == "N":
+        if BROWNDISGM2 == "Y":
+            BROW2 = "YN"
+        elif BROWNDISGM2 == "N":
+            print("error either you messed up or your adopted")
+elif BROWDISM == "N":
+    BROW2 = "NN"
+
+if  BROW1 ==  "YY" and BROW2 == "YY":
+    BROW = "SEPERATE"
+elif BROW1 == "YY" and BROW2 == "YN":
+    BROW = "SEPERATE"
+elif BROW1 == "YY" and BROW2 == "NN":
+    BROW = "SEPERATE"
+elif BROW1 == "YN" and BROW2 == "YY":
+    BROW = "SEPERATE"
+elif BROW1 == "YN" and BROW2 == "YN":
+    BROW = "SEPERATE"
+elif BROW1 == "YN" and BROW2 == "NN":
+    FIRST = random.randint(0,1)
+    if FIRST == "0":
+        BROW = 'SEPERATE'
+    elif FIRST == "1":
+        BROW = 'UNIBROW'
+elif BROW1 == "NN" and BROW2 == "YY":
+    BROW = "SEPERATE"
+elif BROW1 == "NN" and BROW2 == "YN": 
+    FIRST = random.randint(0,1)
+    if FIRST == "0":
+        BROW = 'SEPERATE'
+    elif FIRST == "1":
+        BROW = 'UNIBROW'
+elif BROW1 == "NN" and BROW2 == "NN":
+    BROW = "UNIBROW"
+
+BROWTEXF = input("DOES THE FATHER HAVE BUSHY EYEBROWS")
+if BROWTEXF == "Y":
+    BROWTEXGF1 = input("DOES THE GRANDFATHER HAVE BUSHY EYEBROWS")
+    if BROWDISGF1 == "Y":
+        BROWTEXF1 = "Y"
+    elif BROWDISGF1 == "N":
+        BROWTEXF1 = "N"
+    BROWTEXGM1 = input("DOES THE GRANDMOTHER HAVE BUSHY EYEBROWS")
+    if BROWTEXF1 == "Y":
+        if BROWTEXGM1 == "Y":
+            BROWTEX1 = "YY"
+        elif BROWTEXGM1 == "N":
+            BROWTEX1 = "YN"
+    elif BROWTEXF1 == "N":
+        if BROWTEXGM1 == "Y":
+            BROWTEX1 = "YN"
+        elif BROWTEXGM1 == "N":
+            print("error either you messed up or your adopted")
+elif BROWTEXF == "N":
+    BROWTEX1 = "NN"
+
+BROWTEXM = input("DOES THE MOTHER HAVE BUSHY EYEBROWS")
+if BROWTEXM == "Y":
+    BROWTEXGF2 = input("DOES THE GRANDFATHER HAVE BUSHY EYEBROWS")
+    if BROWDISGF2 == "Y":
+        BROWTEXF2 = "Y"
+    elif BROWDISGF2 == "N":
+        BROWTEXF2 = "N"
+    BROWTEXGM2 = input("DOES THE GRANDMOTHER HAVE BUSHY EYEBROWS")
+    if BROWTEXF2 == "Y":
+        if BROWTEXGM2 == "Y":
+            BROWTEX2 = "YY"
+        elif BROWTEXGM2 == "N":
+            BROWTEX2 = "YN"
+    elif BROWTEXF2 == "N":
+        if BROWTEXGM2 == "Y":
+            BROWTEX2 = "YN"
+        elif BROWTEXGM2 == "N":
+            print("error either you messed up or your adopted")
+elif BROWTEXF == "N":
+    BROWTEX2 = "NN"
+
+if  BROWTEX1 ==  "YY" and BROWTEX2 == "YY":
+    BROWTEX = "BUSHY"
+elif BROWTEX1 == "YY" and BROWTEX2 == "YN":
+    BROWTEX = "BUSHY"
+elif BROWTEX1 == "YY" and BROWTEX2 == "NN":
+    BROWTEX = "BUSHY"
+elif BROWTEX1 == "YN" and BROWTEX2 == "YY":
+    BROWTEX = "BUSHY"
+elif BROWTEX1 == "YN" and BROWTEX2 == "YN":
+    BROWTEX = "BUSHY"
+elif BROWTEX1 == "YN" and BROWTEX2 == "NN":
+    FIRST = random.randint(0,1)
+    if FIRST == "0":
+        BROWTEX = 'BUSHY'
+    elif FIRST == "1":
+        BROWTEX = 'FINE'
+elif BROWTEX1 == "NN" and BROWTEX2 == "YY":
+    BROWTEX = "BUSHY"
+elif BROWTEX1 == "NN" and BROWTEX2 == "YN": 
+    FIRST = random.randint(0,1)
+    if FIRST == "0":
+        BROWTEX = 'BUSHY'
+    elif FIRST == "1":
+        BROWTEX = 'FINE'
+elif BROWTEX1 == "NN" and BROWTEX2 == "NN":
+    BROWTEX = "FINE"
+
+CLEFTF = input("DOES THE FATHER HAVE CLEFT CHIN")
+if CLEFTF == "Y":
+    CLEFTGF1 = input("DOES THE GRANDFATHER HAVE CLEFT CHIN")
+    if BROWDISGF1 == "Y":
+        CLEFTF1 = "Y"
+    elif CLEFTGF1 == "N":
+        CLEFTF1 = "N"
+    CLEFTGM1 = input("DOES THE GRANDMOTHER HAVE CLEFT CHIN")
+    if CLEFTF1 == "Y":
+        if CLEFTGM1 == "Y":
+            CLEFT1 = "YY"
+        elif CLEFTGM1 == "N":
+            CLEFT1 = "YN"
+    elif CLEFTF1 == "N":
+        if CLEFTGM1 == "Y":
+            CLEFT1 = "YN"
+        elif CLEFTGM1 == "N":
+            print("error either you messed up or your adopted")
+elif CLEFTF == "N":
+    CLEFT1 = "NN"
+
+CLEFTM = input("DOES THE MOTHER HAVE CLEFT CHIN")
+if CLEFTM == 'Y': 
+    CLEFTGF2 = input("DOES THE GRANDFATHER HAVE CLEFT CHIN")
+    if CLEFTGF2 == 'Y':
+        CLEFTF2 = 'Y'
+    elif CLEFTGF2 == 'N':
+        CLEFTF2 = 'N'
+    CLEFTGM2 = input("DOES THE GRANDMOTHER HAVE CLEFT CHIN")
+    if CLEFTF2 == 'Y':
+        if CLEFTGM2 == 'Y':
+            CLEFT2 = 'YY'
+        elif CLEFTGM2 == 'N':
+            CLEFT2 = 'YN'
+    elif CLEFTF2 == 'N':
+        if CLEFTGM2 == 'Y':
+            CLEFT2 = 'YN'
+        elif CLEFTGM2 == 'N':
+            print("error either you messed up or your adopted")
+elif CLEFTM == 'N':
+    CLEFT2 = 'NN'
+
+if  CLEFT1 ==  'YY' and CLEFT2 == 'YY':
+    CLEFT = 'YES'
+elif CLEFT1 == 'YY' and CLEFT2 == 'YN':
+    CLEFT = 'YES'
+elif CLEFT1 == 'YY' and CLEFT2 == 'NN':
+    CLEFT = 'YES'
+elif CLEFT1 == 'YN' and CLEFT2 == 'YY':
+    CLEFT = 'YES'
+elif CLEFT1 == 'YN' and CLEFT2 == 'YN':
+    CLEFT = 'YES'
+elif CLEFT1 == 'YN' and CLEFT2 == 'NN':
+    FIRST = random.randint(0,1)
+    if FIRST == "0":
+        CLEFT = 'YES'
+    elif FIRST == "1":
+        CLEFT = 'NO'
+elif CLEFT1 == 'NN' and CLEFT2 == 'YY':
+    CLEFT = 'YES'
+elif CLEFT1 == 'NN' and CLEFT2 == 'YN': 
+    FIRST = random.randint(0,1)
+    if FIRST == "0":
+        CLEFT = 'YES'
+    elif FIRST == "1":
+        CLEFT = 'NO'
+elif CLEFT1 == 'NN' and CLEFT2 == 'NN':
+    CLEFT = 'NO'
+
+WIDOWF = input("DOES THE FATHER HAVE WIDOWS PEAK")
+if WIDOWF == 'Y':
+    WIDOWGF1 = input("DOES GRANDFATHER HAVE WIDOW PEAK?")
+    if WIDOWGF1 == 'Y':
+        WIDOWF1 = 'Y'
+    elif WIDOWGF1 == 'N':
+        WIDOWF1 = 'N'
+    WIDOWGM1 = input("DOES GRANDMOTHER HAVE WIDOW PEAK?")
+    if WIDOWF1 == 'Y':
+        if WIDOWGM1 == 'Y':
+            WIDOW1 = 'YY'
+        elif WIDOWGM1 == 'N':
+            WIDOW1 = 'YN'
+    elif WIDOWF1 == 'N':
+        if WIDOWGM1 == 'Y':
+            WIDOW1 = 'YN'
+        elif WIDOWGM1 == 'N':
+            print("error either you messed up or your adopted")
+elif WIDOWF == 'N':
+    WIDOW1 = 'NN'
+
+WIDOWM = input("DOES THE MOTHER HAVE WIDOWS PEAK")
+if WIDOWM == 'Y':
+    WIDOWGF2 = input("DOES GRANDFATHER HAVE WIDOW PEAK?")
+    if WIDOWGF2 == 'Y':
+        WIDOWF2 = 'Y'
+    elif WIDOWGF2 == 'N':
+        WIDOWF2 = 'N'
+    WIDOWGM2 = input("DOES GRANDMOTHER HAVE WIDOW PEAK?")
+    if WIDOWF2 == 'Y':
+        if WIDOWGM2 == 'Y':
+            WIDOW2 = 'YY'
+        elif WIDOWGM2 == 'N':
+            WIDOW2 = 'YN'
+    elif WIDOWF2 == 'N':
+        if WIDOWGM2 == 'Y':
+            WIDOW2 = 'YN'
+        elif WIDOWGM2 == 'N':
+            print("error either you messed up or your adopted")
+elif WIDOWF == 'N':
+    WIDOW2 = 'NN'
+
+if WIDOW1 == 'YY' and WIDOW2 == 'YY':
+    WIDOW = 'YES'
+elif WIDOW1 == 'YY' and WIDOW2 == 'YN':
+    WIDOW = 'YES'
+elif WIDOW1 == 'YY' and WIDOW2 == 'NN':
+    WIDOW = 'YES'
+elif WIDOW1 == 'YN' and WIDOW2 == 'YY':
+    WIDOW = 'YES'
+elif WIDOW1 == 'YN' and WIDOW2 == 'YN':
+    WIDOW = 'YES'
+elif WIDOW1 == 'YN' and WIDOW2 == 'NN':
+    FIRST = random.randint(0,1)
+    if FIRST == "0":
+        WIDOW = 'YES'
+    elif FIRST == "1":
+        WIDOW = 'NO'
+elif WIDOW1 == 'NN' and WIDOW2 == 'YY':
+    WIDOW = 'YES'
+elif WIDOW1 == 'NN' and WIDOW2 == 'YN': 
+    FIRST = random.randint(0,1)
+    if FIRST == "0":
+        WIDOW = 'YES'
+    elif FIRST == "1":
+        WIDOW = 'NO'
+elif WIDOW1 == 'NN' and WIDOW2 == 'NN':
+    WIDOW = 'NO'    
+
+FACSHAPF = input("DOES THE FATHER HAVE ROUND FACE")
+if FACSHAPF == 'Y':
+    FACSHAPGF1 = input("DOES THE GRANDFATHER HAVE ROUND FACE")
+    if FACSHAPGF1 == 'Y':
+        FACEF1 = 'Y'
+    elif FACSHAPGF1 == 'N':
+        FACEF1 = 'N'
+    FACSHAPGM1 = input("DOES THE GRANDMOTHER HAVE ROUND FACE")
+    if FACEF1 == 'Y':
+        if FACSHAPGM1 == 'Y':
+            FACE1 = 'YY'
+        elif FACSHAPGM1 == 'N':
+            FACE1 = 'YN'
+    elif FACEF1 == 'N':
+        if FACSHAPGM1 == 'Y':
+            FACE1 = 'YN'
+        elif FACSHAPGM1 == 'N':
+            print("error either you messed up or your adopted")
+elif FACSHAPF == 'N':
+    FACE1 = 'NN'
+ 
+FACSHAPM = input("DOES THE MOTHER HAVE ROUND FACE")
+if FACSHAPM == 'Y':
+    FACSHAPGF2 = input("DOES THE GRANDFATHER HAVE ROUND FACE")
+    if FACSHAPGF2 == 'Y':
+        FACEF2 = 'Y'
+    elif FACSHAPGF1 == 'N':
+        FACEF2 = 'N'
+    FACSHAPGM2 = input("DOES THE GRANDMOTHER HAVE ROUND FACE")
+    if FACEF2 == 'Y':
+        if FACSHAPGM2 == 'Y':
+            FACE2 = 'YY'
+        elif FACSHAPGM2 == 'N':
+            FACE2 = 'YN'
+    elif FACEF2 == 'N':
+        if FACSHAPGM2 == 'Y':
+            FACE2 = 'YN'
+        elif FACSHAPGM2 == 'N':
+            print("error either you messed up or your adopted")
+elif FACSHAPM  == 'N':
+    FACE2 = 'NN'
+
+if  FACE1 == 'YY' and FACE2 == 'YY':
+    FACE= 'ROUND'
+elif FACE1 == 'YY' and FACE2 == 'YN':
+    FACE = 'ROUND'
+elif FACE1 == 'YY' and FACE2 == 'NN':
+    FACE = 'ROUND'
+elif FACE1 == 'YN' and FACE2 == 'YY':
+    FACE = 'ROUND'
+elif FACE1 == 'YN' and FACE2 == 'YN':
+    FACE = 'ROUND'
+elif FACE1 == 'YN' and FACE2 == 'NN':
+    FIRST = random.randint(0,1)
+    if FIRST == "0":
+        FACE = 'ROUND'
+    elif FIRST == "1":
+        FACE = 'SQUARE'
+elif FACE1 == 'NN' and FACE2 == 'YY':
+    FACE = 'ROUND'
+elif FACE1 == 'NN' and FACE2 == 'YN': 
+    FIRST = random.randint(0,1)
+    if FIRST == "0":
+        FACE = 'ROUND'
+    elif FIRST == "1":
+        FACE = 'SQUARE'
+elif FACE1 == 'NN' and FACE2 == 'NN':
+    FACE = 'SQUARE'
+
+DIMPLESF = input("DOES THE FATHER HAVE DIMPLES")
+if DIMPLESF == 'Y':
+    DIMPLESGF1 = input("DOES THE GRANDFATHER HAVE DIMPES FACE")
+    if DIMPLESGF1 == 'Y':
+        DIMPLESF1 = 'Y'
+    elif DIMPLESGF1 == 'N':
+        DIMPLESF1 = 'N'
+    DIMPLESGM1 = input("DOES THE GRANDMOTHER HAVE DIMPLES FACE")
+    if DIMPLESF1 == 'Y':
+        if DIMPLESGM1 == 'Y':
+            DIMPLES1 = 'YY'
+        elif DIMPLESGM1 == 'N':
+            DIMPLES1  = 'YN'
+    elif DIMPLESF1 == 'N':
+        if DIMPLESGM1 == 'Y':
+            DIMPLES1 = 'YN'
+        elif DIMPLESGM1 == 'N':
+            print("error either you messed up or your adopted")
+elif DIMPLESF == 'N':
+    DIMPLES1 = 'NN'
+
+DIMPLESM = input("DOES THE MOTHER HAVE DIMPLES(Y or N )? ")
+if DIMPLESM == 'Y':
+    DIMPLESGF2 = input("DOES THE GRANDFATHER HAVE DIMPLES FACE")
+    if DIMPLESGF2 == 'Y':
+        DIMPLESF2 = 'Y'
+    elif DIMPLESGF2 == 'N':
+        DIMPLESF2 = 'N'
+    DIMPLESGM2 = input("DOES THE GRANDMOTHER HAVE DIMPLES FACE")
+    if DIMPLESF2 == 'Y':
+        if DIMPLESGM2 == 'Y':
+            DIMPLES2 = 'YY'
+        elif DIMPLESGM2 == 'N':
+            DIMPLES2 = 'YN'
+    elif DIMPLESF2 == 'N':
+        if DIMPLESGM2 == 'Y':
+            DIMPLES2 = 'YN'
+        elif DIMPLESGM2 == 'N':
+            print("error either you messed up or your adopted")
+elif DIMPLESM == 'N':
+    DIMPLES2 = 'NN'
+
+if  DIMPLES1 ==  'YY' and DIMPLES2 == 'YY':
+    DIMPLES= 'YES'
+elif DIMPLES1 == 'YY' and DIMPLES2 == 'YN':
+    DIMPLES = 'YES'
+elif DIMPLES1 == 'YY' and DIMPLES2 == 'NN':
+    DIMPLES = 'YES'
+elif DIMPLES1 == 'YN' and DIMPLES2 == 'YY':
+    DIMPLES = 'YES'
+elif DIMPLES1 == 'YN' and DIMPLES2 == 'YN':
+    DIMPLES = 'YES'
+elif DIMPLES1 == 'YN' and DIMPLES2 == 'NN':
+    FIRST = random.randint(0,1)
+    if FIRST == "0":
+        DIMPLES = 'YES'
+    elif FIRST == "1":
+        DIMPLES = 'NO'
+elif DIMPLES1 == 'NN' and DIMPLES2 == 'YY':
+    DIMPLES = 'YES'
+elif DIMPLES1 == 'NN' and DIMPLES2 == 'YN': 
+    FIRST = random.randint(0,1)
+    if FIRST == "0":
+        DIMPLES = 'YES'
+    elif FIRST == "1":
+        DIMPLES = 'NO'
+elif DIMPLES1 == 'NN' and DIMPLES2 == 'NN':
+    DIMPLES = 'NO'
+
+EYECOLF = input("WHAT IS THE FATHERS EYE COLOR")
+if EYECOLF == 'BLUE':
+   EYECOL1 = 'BL' 
+elif EYECOLF == 'GREEN':
+    EYECOL1 = 'GR'
+elif EYECOLF == 'BROWN':
+    EYECOL1 = 'BR'
+EYECOLM = input("WHAT IS THE MOTHERS EYE COLOR")
+if EYECOLM == 'BLUE':
+    EYECOL2 = 'BL'
+elif EYECOLM == 'GREEN':
+    EYECOL2 = 'GR'
+elif EYECOLM == 'BROWN':
+    EYECOL2 = 'BR'
+if EYECOL1 == 'GR' and EYECOL2 == 'BL' :
+    FIRST = random.randint(0,1)
+    if FIRST == "0":
+        EYECOL = 'BROWN'
+    elif FIRST == "1":
+        EYECOL = 'BLUE'
+if EYECOL1 == 'BL' and EYECOL2 == 'GR':
+    EYECOL = 'GREEN'
+elif EYECOL1 == 'GR' and EYECOL2 == 'GR':
+    EYECOL = 'GREEN'
+elif EYECOL1 == 'BL' and EYECOL2 == 'BR'  :
+    FIRST = random.randint(0,1)
+    if FIRST == "0":
+        EYECOL = 'BROWN'
+    elif FIRST == "1":
+        EYECOL = 'BLUE'
+elif EYECOL1 == 'BR' and EYECOL2 == 'BL':
+    FIRST = random.randint(0,1)
+    if FIRST == "0":
+        EYECOL = 'BROWN'
+    elif FIRST == "1":
+        EYECOL = 'BLUE'
+elif EYECOL1 == 'GR' and EYECOL2 == 'BR':
+    EYECOL = 'BROWN'
+elif EYECOL1 == 'BR' and EYECOL2 == 'GR':
+    EYECOL = 'BROWN'
+elif EYECOL1 == 'BR' and EYECOL2 == 'BR':
+    EYECOL = 'BROWN'
+elif EYECOL1 == 'BL' and EYECOL2 == 'BL':
+    EYECOL= 'BLUE'
+
+HAIRCOLF = input("WHAT IS THE FATHERS HAIR COLOR(BLOND,RED,BROWN)")
+if HAIRCOLF == 'BLOND':
+   HAIRCOL1 = 'BL'
+elif HAIRCOLF == 'RED':
+    HAIRCOL1 = 'RE'
+elif HAIRCOLF == 'BROWN':
+    HAIRCOL1 = 'BR'
+HAIRCOLM = input("WHAT IS THE MOTHERS HAIR COLOR")
+if HAIRCOLM == 'BLOND':
+    HAIRCOL2 = 'BL'
+elif HAIRCOLM == 'RED':
+    HAIRCOL2 = 'RE'
+elif HAIRCOLM == 'BROWN':
+    HAIRCOL2 = 'BR'
+
+if HAIRCOL1 == 'BR' and HAIRCOL2 == 'BR' :
+    HAIRCOL = 'BROWN'
+if HAIRCOL1 == 'BR' and HAIRCOL2 == 'BL':
+    HAIRCOL = 'BROWN'
+if HAIRCOL1 == 'BL' and HAIRCOL2 == 'BR':
+    HAIRCOL = 'BROWN'
+if HAIRCOL1 == 'BR' and HAIRCOL2 == 'RE' :
+    HAIRCOL = 'BROWN'
+if HAIRCOL1 == 'RE' and HAIRCOL2 == 'BR':
+    HAIRCOL = 'BROWN'
+if HAIRCOL1 == 'BL' and HAIRCOL2 == 'BL' :
+    HAIRCOL = 'YELLOW'
+if HAIRCOL1 == 'BL' and HAIRCOL2 == 'RE':
+    HAIRCOL = 'YELLOW'
+if HAIRCOL1 == 'RE' and HAIRCOL2 == 'BL':
+    HAIRCOL = 'YELLOW'
+if HAIRCOL1 == 'RE' and HAIRCOL2 == 'RE':
+    HAIRCOL = 'RED'
+    
+    
+    
+    
+    
+    
+if FACE == "SQUARE":
+    screen.create_line(50,20,255,20,275,40,275,305,255,325,50,325,30,305,30,40,50,20)
+    screen.create_line(90,225,130,245,190,245,230,225)
+    if HAIRTEX == 'STRAIGHT':
+        A=40
+        B=20
+        for i in range(12):
+            screen.create_line(A,30,B,80,fill=HAIRCOL)
+            A= A+10
+            B= B+10
+        A1=160
+        B1=180
+        for i in range(11):
+            screen.create_line(A1,30,B1,80,fill=HAIRCOL)
+            A1=A1+10
+            B1=B1+10
+    elif HAIRTEX  == 'WAVY':
+        E=40
+        F=20
+        G=160
+        H=180
+        for i in range(12):
+            screen.create_line(E,30,F,40,E,60,F,80,fill=HAIRCOL)
+            E=E+10
+            F=F+10
+        for i in range(12):
+            screen.create_line(G,30,H,40,G,60,H,80,fill=HAIRCOL)
+            G=G+10
+            H=H+10
+        
+        
+    elif HAIRTEX == 'CURLY':
+        I=40
+        J=45
+        for i in range(12):
+            screen.create_line(I,30,J,35,I,40,J,45,I,50,J,55,I,60,J,65,I,70,J,75,I,80,fill=HAIRCOL)
+            I=I+10
+            J=J+10
+        K=160
+        L=155
+        for i in range(11):
+            screen.create_line(K,30,L,35,K,40,L,45,K,50,L,55,K,60,L,65,K,70,L,75,K,80,fill=HAIRCOL)
+            K=K+10
+            L=L+10  
+elif FACE == "ROUND":
+    screen.create_oval(30,20,275,325)
+    screen.create_line(90,225,130,245,190,245,230,225)
+    if HAIRTEX=='STRAIGHT':
+        #ROUND STRAIGHT
+        screen.create_line(60,70,80,100,fill=HAIRCOL)
+        screen.create_line(70,60,90,90,fill=HAIRCOL)
+        screen.create_line(80,50,100,80,fill=HAIRCOL)
+        screen.create_line(90,40,110,70,fill=HAIRCOL)
+        screen.create_line(110,30,130,60,fill=HAIRCOL)
+        screen.create_line(130,20,150,50,fill=HAIRCOL)
+        screen.create_line(150,20,170,50,fill=HAIRCOL)
+        screen.create_line(170,20,190,50,fill=HAIRCOL)
+        screen.create_line(190,30,210,60,fill=HAIRCOL)
+        screen.create_line(210,40,230,70,fill=HAIRCOL)
+    elif HAIRTEX=='WAVY':
+        #ROUND WAVY
+        screen.create_line(60,70,75,80,70,90,80,100,fill=HAIRCOL)
+        screen.create_line(70,60,85,70,80,80,90,90,fill=HAIRCOL)
+        screen.create_line(80,50,95,60,90,70,100,80,fill=HAIRCOL)
+        screen.create_line(90,40,105,50,100,60,110,70,fill=HAIRCOL)
+        screen.create_line(110,30,115,40,120,50,130,60,fill=HAIRCOL)
+        screen.create_line(130,20,125,30,140,40,150,50,fill=HAIRCOL)
+        screen.create_line(150,20,135,30,160,40,170,50,fill=HAIRCOL)
+        screen.create_line(170,20,145,30,180,40,190,50,fill=HAIRCOL)
+        screen.create_line(190,30,210,40,200,50,210,60,fill=HAIRCOL)
+        screen.create_line(210,40,230,50,220,60,230,70,fill=HAIRCOL)
+    elif HAIRTEX=='CURLY':
+        #ROUND CURLY
+        screen.create_line(60,70,65,75,60,80,65,85,60,90,65,95,60,100,fill=HAIRCOL)
+        screen.create_line(70,60,75,65,70,70,75,75,70,80,75,85,70,90,fill=HAIRCOL)
+        screen.create_line(80,50,85,55,80,60,85,65,80,70,85,75,80,80,fill=HAIRCOL)
+        screen.create_line(90,40,95,45,90,50,95,55,90,60,95,65,90,70,fill=HAIRCOL)
+        screen.create_line(110,30,115,35,110,40,115,45,110,50,115,55,110,60,fill=HAIRCOL)
+        screen.create_line(130,20,135,25,130,30,135,35,130,40,135,45,130,50,fill=HAIRCOL)
+        screen.create_line(150,20,155,25,150,30,155,35,150,40,155,45,150,50,fill=HAIRCOL)
+        screen.create_line(170,20,175,25,170,30,175,35,170,40,175,45,170,50,fill=HAIRCOL)
+        screen.create_line(190,30,195,35,190,40,195,45,190,50,195,55,190,60,fill=HAIRCOL)
+        screen.create_line(210,40,215,45,210,50,215,55,210,60,215,65,210,70,fill=HAIRCOL)
+
+
+
+if WIDOW== 'YES':
+    screen.create_line(140,20,160,50,180,20)
+elif WIDOW== 'NO':
+    print('____')
+
+
+
+
+
+if LASH == 'SMALL':
+    a5=70
+elif LASH== 'LONG':
+    a5=50
+
+
+if EYESIZ=='SMALL':
+    A4=130
+    A6=140
+elif EYESIZ=='MEDIUM':
+    A4=150
+    A6=160
+elif EYESIZ=='LARGE':
+    A4=170
+    A6=180
+    
+
+if EYEDIS=='CLOSE':
+    screen.create_oval(110,90,160,A6)
+    screen.create_oval(120,100,150,A4,fill=EYECOL)
+    screen.create_oval(170,90,220,A6)
+    screen.create_oval(180,100,210,A4,fill=EYECOL)
+    
+    screen.create_line(120,95,120,a5)
+    screen.create_line(130,90,130,a5)
+    screen.create_line(140,90,140,a5)
+    screen.create_line(150,95,150,a5)
+    #small right lashes
+    screen.create_line(180,95,180,a5)
+    screen.create_line(190,90,190,a5)
+    screen.create_line(200,90,200,a5)
+    screen.create_line(210,95,210,a5)
+    
+    
+elif EYEDIS=='FAR':
+    screen.create_oval(60,90,110,A6)
+    screen.create_oval(70,100,100,A4,fill=EYECOL)
+    screen.create_oval(200,90,250,A6)
+    screen.create_oval(210,100,240,A4,fill=EYECOL)
+    
+    screen.create_line(70,95,70,a5)
+    screen.create_line(80,90,80,a5)
+    screen.create_line(90,90,90,a5)
+    screen.create_line(100,95,100,a5)
+    #small right lashes
+    screen.create_line(210,95,210,a5)
+    screen.create_line(220,90,220,a5)
+    screen.create_line(230,90,230,a5)
+    screen.create_line(240,95,240,a5)
+    
+elif EYEDIS=='AVERAGE':
+    screen.create_oval(90,90,140,A6)
+    screen.create_oval(100,100,130,A4,fill=EYECOL)    
+    screen.create_oval(180,90,230,A6)
+    screen.create_oval(190,100,220,A4,fill=EYECOL)
+    
+    screen.create_line(100,95,100,a5)
+    screen.create_line(110,90,110,a5)
+    screen.create_line(120,90,120,a5)
+    screen.create_line(130,95,130,a5)
+    #small right lashes
+    screen.create_line(190,95,190,a5)
+    screen.create_line(200,90,200,a5)
+    screen.create_line(210,90,210,a5)
+    screen.create_line(220,95,220,a5)
+
+
+
+
+
+
+if NOSE== 'SMALL':
+    screen.create_line(135,185,155,185,145,155,135,185)
+elif NOSE== 'MEDIUM':
+    screen.create_line(125,185,165,185,145,155,125,185)
+elif NOSE== 'LARGE':
+    screen.create_line(115,185,175,185,145,155,115,185)
+    
+
+if FRECK =='YES':
+    screen.create_oval(60,180,65,185)
+    screen.create_oval(60,170,65,175)
+    screen.create_oval(75,180,80,185)
+    screen.create_oval(55,200,60,205)
+    screen.create_oval(60,210,65,215)
+    #FRECKLES RIGHT
+    screen.create_oval(240,180,245,185)
+    screen.create_oval(240,170,245,175)
+    screen.create_oval(235,180,240,185)
+    screen.create_oval(245,200,250,205)
+    screen.create_oval(250,210,255,215)
+elif FRECK == 'NO':
+    print("__")
+if BROWTEX== 'FINE':
+    P=70
+elif BROWTEX=='BUSHY':
+    P=50
+if BROW == 'UNIBROW':
+    screen.create_rectangle(90,P,230,80)
+elif BROW == 'SEPERATE':
+    #eyebrow
+    screen.create_rectangle(90,P,140,80)
+    screen.create_rectangle(180,P,230,80)
+if DIMPLES== 'YES':
+    screen.create_line(95,195,75,215,75,265,95,285)
+    screen.create_line(225,195,245,215,245,265,225,285)
+elif DIMPLES == 'NO':
+    print("___")
+if CLEFT== 'YES':
+    screen.create_line(150,325,150,300,125,300,175,300)
+elif CLEFT== 'NO':
+    print("___")
+
+print("____________________________________________________________")
+print("WHAT IS THE KIDS HAIR COLOR? "+ str(HAIRCOL))
+print("WHAT IS THE KIDS EYE COLOR? "+ str(EYECOL))
+print("WHAT IS THE KIDS FACE SHAPE? "+ str(FACE))
+print("DOES THE KID HAVE A WIDOWS PEAK? "+ str(WIDOW))
+print("WHAT IS THE KIDS BROW TEXTURE? "+ str(BROWTEX))    
+print("____________________________________________________________")
+print("WHAT IS THE KIDS HAIR COLOR? "+ str(HAIRCOL))
+print("WHAT IS THE KIDS EYE COLOR? "+ str(EYECOL))
+print("DOES THE KID HAVE DIMPLES? "+ str(DIMPLES))
+print("WHAT IS THE KIDS FACE SHAPE? "+ str(FACE))
+print("DOES THE KID HAVE A WIDOWS PEAK? "+ str(WIDOW))
+print("DOES THE KID HAVE A CLEFT CHIN? "+ str(CLEFT))
+print("WHAT IS THE KIDS BROW TEXTURE? "+ str(BROWTEX))
+print("WHAT TYPE OF EYEBROWS DOES THE KID HAVE? "+ str(BROW))
+print("WHAT TYPE OF LASHES DOES THE KID HAVE? "+ str(LASH))
+print("DOES THE KID HAVE FRECKLES? "+ str(FRECK))
+print(HAIRTEX)
+print(NOSE)
+print(EYESIZ)
+print(EYEDIS)
